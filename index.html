@@ -8,45 +8,22 @@
 			<title></title>
 		</head>
 		<body>
-			<div id="page-wrapper" class="container">
-				<h2>Templates tests:</h2>
-				<div id="results"></div>
-			</div>
-
 			<div class="main-carousel">
-			
+				<div id="page-wrapper" class="container">
+					<h2>Templates tests:</h2>
+					<div id="results"></div>
+				</div>
 			</div>
-
+			<div class="progress-bar"></div>
 			<script id="slide-list" type="x-tmpl-mustache">
 			<h3>Product list</h3>
 			<ul>
 			{{{products}}}
 			</ul>
 			</script>
-
 			<script id="slide-item" type="x-tmpl-mustache">
 			<li> {{ image }} {{ title }} {{ description }}!</li>
 			</script>
-			<script>
-				var productsData = [
-					{
-						image: 'images/1.jpg', 
-						title: 'orange',
-						description: 'slideOne'
-					},
-					{
-						image: 'images/2.jpg', 
-						title: 'yellow',
-						description: 'slideTwo'
-					},
-					{
-						image: 'images/3.jpg', 
-						title: 'green',
-						description: 'slideTwo'
-					}
-				];
-			</script>			
-
 			<footer></footer>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 			<script src="vendor/flickity.pkgd.min.js"></script>

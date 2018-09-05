@@ -1,7 +1,25 @@
 'use strict';
 (function(){ 
 
-	var templateSlideList = document.getElementById('silde-list').innerHTML;
+	var productsData = [
+				{
+					image: 'images/1.jpg', 
+					title: 'orange',
+					description: 'slideOne'
+				},
+				{
+					image: 'images/2.jpg', 
+					title: 'yellow',
+					description: 'slideTwo'
+				},
+				{
+					image: 'images/3.jpg', 
+					title: 'green',
+					description: 'slideTwo'
+				}
+			];
+
+	var templateSlideList = document.getElementById('slide-list').innerHTML;
 	var templateSlideItem = document.getElementById('slide-item').innerHTML;
 	Mustache.parse(templateSlideItem);	
 	var slideItems = '';
